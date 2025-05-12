@@ -4,7 +4,7 @@ from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 
 # Load marks data from JSON file at startup
-with open('q-versel-python.json', 'r') as f:
+with open('q-vercel-python.json', 'r') as f:
     marks_data = json.load(f)
 
 app = FastAPI()
