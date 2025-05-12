@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 # Load marks data from JSON file at startup
 with open('q-vercel-python.json', 'r') as f:
     data_list = json.load(f)
-     marks_data = {item["name"]: item["marks"] for item in data_list}
+    marks_data = {item["name"]: item["marks"] for item in data_list}
 
 app = FastAPI()
 
